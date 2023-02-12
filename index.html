@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<title>Oni ninja</title>
+	<!-- parte do css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- fim do css -->
+	</script>
+</head>
+<body>
+	<!--  canvas -->
+	<canvas id="c"></canvas>
+
+	<!-- jogador HUD -->
+	<div class="hud">
+		<div class="hud__score">
+			<div class="score-lbl"></div>
+			<div class="cube-count-lbl"></div>
+		</div>
+		<div class="pause-btn"><div></div></div>
+		<div class="slowmo">
+			<div class="slowmo__bar"></div>
+		</div>
+	</div>
+
+	<!-- Menu do jogo -->
+	<div class="menus">
+		<div class="menu menu--main">
+			<h1>ONI NINJA</h1>
+			<button type="button" class="play-normal-btn">Play</button>
+			<button type="button" class="play-casual-btn">Modo Facil</button>
+			
+		</div>
+		<div class="menu menu--pause">
+			<h1>Pause</h1>
+			<button type="button" class="resume-btn">Voltar ao jogo</button>
+			<button type="button" class="menu-btn--pause">MENU</button>
+		</div>
+		<div class="menu menu--score">
+			<h1>Você Perdeu</h1>
+			<h2>Pontos:</h2>
+			<div class="final-score-lbl"></div>
+			<div class="high-score-lbl"></div>
+			<button type="button" class="play-again-btn">Novo jogo</button>
+			<button type="button" class="menu-btn--score">MENU</button>
+		</div>
+	</div>
+
+	<!-- build:js combinado.js -->
+	<script src="js/configuracoes.js"></script> <!-- Configurações basicas -->
+	<script src="js/estado-jogo.js"></script> <!-- Modos de jogo-->
+	<script src="js/matematica.js"></script> <!-- Matemática pura não mexe aqui -->
+	<script src="js/modelos3d.js"></script> <!-- Modelos 3d-->
+	<script src="js/Entity.js"></script> <!-- Deixa isso quieto tbm mais poder ler.-->
+	<script src="js/trajeto-alvo.js"></script> <!-- Trageto do alvo-->
+	<script src="js/fraguimentos.js"></script> <!-- Trageto dos fragmentos-->
+	<script src="js/faisca.js"></script> <!-- Configuração da faisca-->
+	<script src="js/hud.js"></script> <!-- Mexe aqui não-->
+	<script src="js/menus.js"></script> <!-- Menu do jogo-->
+	<script src="js/acoes.js"></script> <!-- Açoes do jogo exemplo: play game-->
+	<script src="js/animacao.js"></script> <!-- Animação do jogo cubos e etc -->
+	<script src="js/faisca-cubo.js"></script> <!-- Faiscas ao bater no cubo-->
+	<script src="js/canvas.js"></script> <!-- Coração do jogo-->
+	<script src="js/interacao.js"></script> <!-- Evsntos do jogo-->
+	<script src="js/index.js"></script>
+	<!-- construção final -->
+
+	<!-- construir: remover -->
+	<script src="js/ferramenta.js"></script> <!-- calcula o desempenho -->
+	<script src="js/tests/projeto1.js"></script><!-- Projeto jogo v3-->
+	<script src="js/tests/projeto2.js"></script> <!-- Executor de testes da uma olhada -->
+	<script src="js/tests/projeto3.js"></script><!-- Projeto jogov3  -->
+	<!-- construção final -->
+</body>
+</html>
